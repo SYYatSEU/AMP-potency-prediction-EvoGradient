@@ -60,6 +60,3 @@ python EvoGradient.py --peptide RPLIKLRSTAGTGYTYVTRK
 This repository as a whole is under the Apache-2.0 license.
 
 
-## Acknowledgement
-We thank Prof. Harris Wang (Columbia University) for helpful discussion and feedback. This work was financially supported by the National Natural Science Foundation of China (32000036).
-

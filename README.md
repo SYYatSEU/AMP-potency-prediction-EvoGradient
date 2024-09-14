@@ -5,8 +5,10 @@ A PyTorch implementation of "Automatic Identification and Virtual Directed Evolu
 ![overview](overview.jpg)
 
 ## Installation
-The recommended method of installation is through conda(add hyper link)
+Environments are listed in [environment.yaml](./environment.yaml). 
 
+The recommended method of installation is through [conda](https://github.com/conda/conda). 
+To install, run the following command:
 
 ```
 conda env create -f environment.yaml -n myenv
@@ -45,7 +47,7 @@ python AMP_regression.py --testPath './data/regression/demo.fasta' --savePath 'o
 ### EvoGradient: Directed Evolution 
 To perform the directed evolution to increase antimicrobial activity of peptides, run the following command:
 ```
-cd EvoGradient; 
+cd EvoGradient
 python EvoGradient.py --peptide PeptideToOptimize
 ```
 One Example is:

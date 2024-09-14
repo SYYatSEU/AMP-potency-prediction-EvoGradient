@@ -29,7 +29,7 @@ python AMP_classification.py --testPath './data/classification/PathToFastaFile' 
 ```
 Note: input file must be fasta file. 
 
-One Example is (*cost approximately 11 seconds*):
+One Example is:
 ```
 python AMP_classification.py --testPath './data/classification/demo.fasta' --savePath 'output/classification_result.csv'
 ```
@@ -43,7 +43,7 @@ python AMP_regression.py --testPath './data/regression/PathToFastaFile' --savePa
 ```
 Note: input file must be fasta file. 
 
-One Example is (*cost approximately 7 seconds*):
+One Example is:
 ```
 python AMP_regression.py --testPath './data/regression/demo.fasta' --savePath 'output/regression_result.csv'
 ```
@@ -55,13 +55,22 @@ To perform the directed evolution to increase antimicrobial activity of peptides
 cd EvoGradient
 python EvoGradient.py --peptide PeptideToOptimize
 ```
-One Example is (*cost approximately 9 seconds*):
+One Example is:
 ```
 cd EvoGradient
 python EvoGradient.py --peptide RPLIKLRSTAGTGYTYVTRK
 ```
 Expected output: [`./EvoGradient/EvoResult`](./EvoGradient/EvoResult/RPLIKLRSTAGTGYTYVTRK).
 
+### Expected run time on 1 NVIDIA GeForce RTX 2080 Ti
+**AMP classification**:
+The classification of peptides in `./data/classification/demo.fasta` (containing 18,084 sequences) took **9.39** seconds, with an average processing time of about 0.00052 seconds per sequence.
+
+**AMP regression**:
+The regression of peptides in `./data/regression/demo.fasta` (with 1,312 sequences) took **5.48** seconds, with an average processing time of about 0.00418 seconds per sequence.
+
+**EvoGradient**:
+For the demo sequence `RPLIKLRSTAGTGYTYVTRK`, processing took **7.42** seconds. Additionally, we tested 100 randomly generated peptides, ranging from 5 to 50 amino acids in length. It took 460.79 seconds, approximately 4.61 seconds per sequence.
 
 ## License
 [This repository as a whole is under the Apache-2.0 license.](./LICENSE)

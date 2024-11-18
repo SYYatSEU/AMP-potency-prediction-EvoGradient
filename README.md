@@ -1,5 +1,5 @@
 # AMP-Potency-Prediction-and-EvoGradient
-A PyTorch implementation of "Automatic Identification and Virtual Directed Evolution of Antimicrobial Peptides with Explainable Deep Learning".
+A PyTorch implementation of "Explainable deep learning and virtual evolution identifies antimicrobial peptides with activity against multidrug resistant human pathogens".
 
 
 ![overview](overview.jpg)
